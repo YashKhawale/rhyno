@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --font-sora: "Sora", sans-serif; */
+  /* --font-code: "Source Code Pro", monospace; */
+  /* --font-grotesk: "Space Grotesk", sans-serif; */
+  --font-lato: "Lato", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply font-poppins text-base;
+  }
+}
+
+@layer components {
+  th {
+    @apply font-medium text-xs lg:text-2xl font-poppins py-2 border-[1.5px] lg:border-2 bg-n-1 dark:bg-n-9/50 border-n-13/30 dark:border-n-5/30 dark:text-n-4/50;
+  }
+  h2 {
+    @apply text-base lg:text-3xl font-semibold font-lato py-5 text-n-8/70 dark:text-n-6/70;
+  }
+  td {
+    @apply border-[1.5px] lg:border-2 border-n-13/30 dark:border-n-5/30 text-[10px] leading-4 px-2 lg:text-xl py-6;
+  }
+  ul {
+    @apply list-disc list-inside text-start lg:mx-2;
+  }
+}
