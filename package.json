@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "homepage": "https://YashKhawale.github.io/rhyno/",
   "type": "module",
-  "homepage": "https://YashKhawale.github.io/rhyno/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
