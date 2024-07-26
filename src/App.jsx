@@ -43,7 +43,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            exact path="/"
             element={
               <>
                 <Hero />
@@ -55,18 +55,18 @@ function App() {
               </>
             }
           />
-          <Route path="/products" element={<ProductList />} />
-          <Route path="/about" element={<About theme={theme} />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/se03lite" element={<SE03Lite theme={theme} />} />
-          <Route path="/se03" element={<SE03 theme={theme} />} />
-          <Route path="/se03max" element={<SE03Max theme={theme} />} />
-          <Route path="/lfp-battery" element={<LfpBattery />} />
-          <Route path="/wider-tyres" element={<WiderTyres />} />
-          <Route path="/range-prediction" element={<RangePrediction />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/design" element={<Design />} />
-          <Route path="/payment" element={<Payment />} />
+          <Route exact path="/products" element={<ProductList />} />
+          <Route exact path="/about" element={<About theme={theme} />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/se03lite" element={<SE03Lite theme={theme} />} />
+          <Route exact path="/se03" element={<SE03 theme={theme} />} />
+          <Route exact path="/se03max" element={<SE03Max theme={theme} />} />
+          <Route exact path="/lfp-battery" element={<LfpBattery />} />
+          <Route exact path="/wider-tyres" element={<WiderTyres />} />
+          <Route exact path="/range-prediction" element={<RangePrediction />} />
+          <Route exact path="/experience" element={<Experience />} />
+          <Route exact path="/design" element={<Design />} />
+          <Route exact path="/payment" element={<Payment />} />
         </Routes>
 
         <div className="">
