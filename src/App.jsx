@@ -43,7 +43,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            exact path="/"
             element={
               <>
                 <Hero />
